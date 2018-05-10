@@ -1,20 +1,38 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<!-- NAVBAR -->
+<div id="nav">
+  <ul>
+    <li><a routerLink="/">Start</a></li>
+    <li><a routerLink="/year2018">2018</a></li>
+    <li><a routerLink="/year2019">2019</a></li>
+    <li><a routerLink="/year2020">2020</a></li>
+  </ul>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+
+<!-- GRID -->
+
+<div>
+  <router-outlet></router-outlet>
+</div>
+
+<!-- FOOTER też powinien być komponent-->
+<footer>
+  <div class="legend">
+    <button (click)="toggleColor('yellow')" id="jaune"></button>
+    <h5>Actuals</h5>
+  </div>
+  <div class="legend">
+    <button (click)="toggleColor('grey')" id="gris">
+    </button>
+    <h5>Allocation within legal entity unit</h5>
+  </div>
+  <div class="legend">
+    <button (click)="toggleColor('green')" id="vert"></button>
+    <h5>Allocations through legal entities</h5>
+  </div>
+  <div class="legend">
+    <button (click)="toggleColor('red')" id="rouge">
+    </button>
+    <h5>Budget controls</h5>
+  </div>
+</footer>

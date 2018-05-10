@@ -1,0 +1,102 @@
+.item3 {
+  grid-column-start: 5;
+  grid-column-end: 95;
+  padding: 20px;
+  background-color: lightblue;
+  text-align: center;
+  margin: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(100, 1%);
+  grid-template-rows: repeat(50, 2%);
+  text-align: center;
+  height: 600px;
+  border: 1px solid black;
+}
+
+.bigdiv {
+  background-color: #0984e3;
+}
+
+.item1 {
+  grid-column-start : 30;
+  grid-column-end: 45;
+  grid-row-start: 1;
+  grid-row-end: 15;
+}
+
+.item2 {
+  grid-column-start : 55;
+  grid-column-end: 70;
+  grid-row-start: 1;
+  grid-row-end: 15;
+}
+
+.item4 {
+  grid-column-start : 30;
+  grid-column-end: 45;
+  grid-row-start: 25;
+  grid-row-end: 40;
+}
+
+.item5 {
+  grid-column-start : 55;
+  grid-column-end: 70;
+  grid-row-start: 25;
+  grid-row-end: 40;
+}
+
+p {
+  background-color: lightblue;
+  margin: 5px;
+}
+
+.redDiv {
+  background-color: darkred;
+  grid-column-start : 10;
+  grid-column-end: 20;
+  grid-row-start: 15;
+  grid-row-end: 25;
+}
+
+.grayDiv {
+  background-color: dimgray;
+  grid-column-start : 30;
+  grid-column-end: 70;
+  grid-row-start: 42;
+  grid-row-end: 50;
+}
+
+.greenDiv {
+  background-color: darkgreen;
+  grid-column-start : 75;
+  grid-column-end: 82;
+  grid-row-start: 10;
+  grid-row-end: 35;
+}
+
+.yellowDiv {
+  background-color: yellow;
+  grid-column-start : 15;
+  grid-column-end: 20;
+  grid-row-start: 30;
+  grid-row-end: 35;
+}
+
+#redCanvas {
+  grid-column-start : 35;
+  grid-column-end: 50;
+  grid-row-start: 14;
+  grid-row-end: 24;
+}
+
+#greenCanvas {
+  grid-column-start : 55;
+  grid-column-end: 70;
+  grid-row-start: 34;
+  grid-row-end: 44;
+}
+
+
