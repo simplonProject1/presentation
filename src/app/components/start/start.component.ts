@@ -1,7 +1,7 @@
-import {Component, Input} from '@angular/core';
-import {MatrixComponent} from '../modal/content/matrix/matrix.component';
-import {ApptioComponent} from '../modal/content/apptio/apptio.component';
+import {Component} from '@angular/core';
+import {ApptioComponent} from '../apptio/apptio.component';
 import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
+import {Mp2019Component} from '../mp2019/mp2019.component';
 
 @Component({
   selector: 'app-start',
@@ -17,9 +17,9 @@ export class StartComponent {
     let modalRef: any;
 
     switch (content) {
-      case 'matrix':
-        modalRef = this.modalService.open(MatrixComponent);
-        modalRef.componentInstance.name = 'World';
+      case 'mp2019':
+        modalRef = this.modalService.open(Mp2019Component);
+        modalRef.componentInstance.name = 'World'; // co to po co?
         break;
       case ('apptio'):
         modalRef = this.modalService.open(ApptioComponent);

@@ -1,0 +1,228 @@
+/*<!-- PAGE 15 : ZOOM IPPM 2019 -->*/
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(100, 1%);
+  grid-template-rows: repeat(50, 2%);
+  height: 800px;
+  width: 1200px;
+  margin: auto;
+}
+
+.titre {
+  font-family: 'Poppins', sans-serif;
+  color: #0984e3;
+  grid-row-start: 1;
+  grid-row-end: 10;
+  grid-column-start: 3;
+  grid-column-end: 100;
+  font-weight: bold;
+  background-color: white;
+}
+
+.titre>p {
+  background-color: white;
+  color: #0984e3;
+  margin-top: 0;
+}
+.titre>h1 {
+  margin : 5px;
+}
+.blue {
+  background-color: #0984e3;
+
+}
+
+#item1 {
+  grid-row-start: 14;
+  grid-row-end: 45;
+  grid-column-start: 5;
+  grid-column-end: 29;
+  border : 1px solid lightblue;
+}
+#item1bis {
+  grid-row-start: 17;
+  grid-row-end: 48;
+  grid-column-start: 1;
+  grid-column-end: 25;
+  background-color: rgba(9, 132, 227, 0.5);
+  border : 1px solid lightblue;
+}
+
+
+#item2 {
+  grid-row-start: 19;
+  grid-row-end: 45;
+  grid-column-start: 35;
+  grid-column-end: 49;
+}
+
+#item2top {
+  grid-row-start: 14;
+  grid-row-end: 19;
+  grid-column-start: 35;
+  grid-column-end: 49;
+  border-bottom : 5px solid white;
+}
+
+
+#item3 {
+  grid-row-start: 17;
+  grid-row-end: 36;
+  grid-column-start: 70;
+  grid-column-end: 83;
+}
+
+#item4 {
+  grid-row-start: 17;
+  grid-row-end: 36;
+  grid-column-start: 86;
+  grid-column-end: 99;
+}
+
+#item5 {
+  grid-row-start: 21;
+  grid-row-end: 33;
+  grid-column-start: 58;
+  grid-column-end: 97;
+  background-color: rgba(102, 179, 255, 0.2);
+  border: 1px solid lightblue;
+}
+
+#item5>h4 {
+  color: blue;
+  font-weight: bold;
+  text-align: left;
+  padding-left: 20px;
+}
+
+
+/*#item5>h4#blueRed {
+  color: #b53471;
+}*/
+
+#cube {
+  height: 80px;
+  z-index: 10;
+  grid-row-start: 17;
+  grid-row-end: 22;
+  grid-column-start: 56;
+  grid-column-end: 59;
+}
+
+#top {
+  grid-row-start: 11;
+  grid-row-end: 11;
+  grid-column-start: 48;
+  grid-column-end: 58;
+  font-size: 16px;
+  color: #0984e3;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+#metrics {
+  grid-row-start: 14;
+  grid-row-end: 14;
+  grid-column-start: 56;
+  grid-column-end: 59;
+  font-size: 16px;
+  color: #0984e3;
+}
+
+h4 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+h5 {
+  color: white;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 10px;
+}
+
+.hp {
+  background: blue;
+  color: white;
+  border: 1px solid white;
+  text-align: center;
+  padding: 2px;
+  margin: 0;
+  /*display: inline-block;*/
+}
+
+p {
+  background-color: #74b9ff;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  padding: 15px 28px 15px 29px;
+  margin-bottom: 0;
+  font-weight: bold;
+}
+
+#electricity {
+  margin-left: 67px;
+  margin-top: 20px;
+}
+
+#hp {
+  margin-left: 72px;
+  margin-top: 35px;
+}
+
+#hubs {
+  margin-left: 72px;
+  margin-top: 35px;
+}
+
+#hubs>.hp {
+  margin-right: 22px;
+}
+
+#building {
+  margin-left: 78px;
+  margin-top: 35px;
+}
+
+#buttons {
+  grid-row-start: 40;
+  grid-row-end: 45;
+  grid-column-start: 70;
+  grid-column-end: 100;
+}
+
+.button {
+  display: flex;
+}
+
+.button>p {
+  background-color: white;
+  color: blue;
+  padding-bottom: 15px;
+  margin: 0;
+}
+
+#ippm1, #ippm2 {
+  width: 50px;
+  height: 50px;
+  background-color: #0984e3;
+}
+
+
+#red {
+  background: #b53471;
+  width: 50px;
+  height: 50px;
+  border-bottom: 5px solid white;
+}
+
+#green {
+  background-color: #6AB04C;
+  width: 50px;
+  height: 50px;
+  border-bottom: 5px solid white;
+}

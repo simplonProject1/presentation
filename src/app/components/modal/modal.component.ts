@@ -1,7 +1,7 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 import {MatrixComponent} from './content/matrix/matrix.component';
-import {ApptioComponent} from './content/apptio/apptio.component';
+import {ApptioComponent} from '../apptio/apptio.component';
 
 @Component({
   selector: 'app-modal',

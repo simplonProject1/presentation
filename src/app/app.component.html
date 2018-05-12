@@ -5,6 +5,7 @@
     <li><a routerLink="/year2018">2018</a></li>
     <li><a routerLink="/year2019">2019</a></li>
     <li><a routerLink="/year2020">2020</a></li>
+    <li><a routerLink="/mp2019" (click)="toggleDisplay('foot')">mp2019</a></li>
   </ul>
 </div>
 <!-- GRID -->
@@ -12,7 +13,7 @@
   <router-outlet></router-outlet>
 </div>
 <!-- FOOTER też powinien być komponent-->
-<footer>
+<footer *ngIf="!display.foot">
   <div class="legend">
     <button (click)="toggleColor('yellow')" id="jaune"></button>
     <h5>Actuals</h5>

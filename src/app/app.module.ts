@@ -12,13 +12,22 @@ import { StartComponent } from './components/start/start.component';
 import { ArrowComponent } from './components/arrow/arrow.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { MatrixComponent } from './components/modal/content/matrix/matrix.component';
-import { ApptioComponent } from './components/modal/content/apptio/apptio.component';
+import { ApptioComponent } from './components/apptio/apptio.component';
+import {Mp2019Component} from './components/mp2019/mp2019.component';
+import {Mp2020Component} from './components/mp2020/mp2020.component';
+import {Bpc11Component} from './components/bpc11/bpc11.component';
+import {TpiComponent} from './components/modal/content/tpi/tpi.component';
+import { Ppm2019Component } from './components/ppm2019/ppm2019.component';
+import { Ppm2020Component } from './components/ppm2020/ppm2020.component';
+import {ToggleDisplayService} from './services/toggle-display.service';
+
 
 const appRoutes: Routes = [
   {path: '', component: StartComponent},
   {path: 'year2018', component: Year2018Component},
   {path: 'year2019', component: Year2019Component},
   {path: 'year2020', component: Year2020Component},
+  {path: 'mp2019', component: Mp2019Component}
 
 ];
 
@@ -32,7 +41,13 @@ const appRoutes: Routes = [
     ArrowComponent,
     ModalComponent,
     MatrixComponent,
-    ApptioComponent
+    ApptioComponent,
+    Mp2019Component,
+    Mp2020Component,
+    Bpc11Component,
+    TpiComponent,
+    Ppm2019Component,
+    Ppm2020Component,
   ],
   imports: [
     BrowserModule,
@@ -41,6 +56,7 @@ const appRoutes: Routes = [
   ],
   providers: [
     ToggleViewService,
+    ToggleDisplayService
   ],
   bootstrap: [AppComponent],
   entryComponents: [ MatrixComponent, ApptioComponent ]

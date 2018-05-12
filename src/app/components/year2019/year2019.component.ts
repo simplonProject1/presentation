@@ -1,4 +1,7 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit, ViewChild} from '@angular/core';
+import { ToggleViewService } from '../../services/toggleview.service';
+import {ColorsObject} from '../../objects/colors.object';
+import {PointObject} from '../../objects/point.object';
 
 @Component({
   selector: 'app-year2019',
@@ -7,14 +10,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Year2019Component implements OnInit {
 
-  fullImagePath: string;
+  @ViewChild('arrow')
+  canvas: any;
 
-  constructor() {
-    this.fullImagePath = 'assets/images/gitqr.png';
-  }
+  colors: ColorsObject;
+
+  constructor(public toggleView: ToggleViewService) { } // konstruktor musi być w dwóch komponentach, żeby oba komponenty z niego korzystały
 
   ngOnInit() {
+    this.colors = this.toggleView.color;
   }
 
+  createPoint(beginX, beginY) {
+    const point = new PointObject();
+    point.beginX = beginX;
+    point.beginY = beginY;
+    return point;
+  }
 }
 

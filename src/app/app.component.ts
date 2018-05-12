@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {ToggleViewService} from './services/toggleview.service';
+import {ToggleDisplayService} from './services/toggle-display.service';
 
 @Component({
   selector: 'app-root',
@@ -9,11 +10,15 @@ import {ToggleViewService} from './services/toggleview.service';
 })
 export class AppComponent {
 
-  constructor (public toggleView: ToggleViewService) {
+  constructor (public toggleView: ToggleViewService, public toggleDisplayService: ToggleDisplayService) {
   }
 
   toggleColor(color: string): void {
     this.toggleView.setColor(color);
+  }
+
+  toggleDisplay(display: string): void {
+    this.toggleDisplayService.setDisplay(display);
   }
 
 }

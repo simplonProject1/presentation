@@ -1,0 +1,126 @@
+/*<!-- PAGE 17 : ZOOM of BPC 11 2020 -->*/
+
+#grid-container {
+  display: grid;
+  grid-template-columns: repeat(100, 1%);
+  grid-template-rows: repeat(50, 2%);
+  height: 800px;
+  width: 1200px;
+  margin: auto;
+}
+
+.titre {
+  font-family: 'Poppins', sans-serif;
+  color: #0984e3;
+  grid-row-start: 1;
+  grid-row-end: 10;
+  grid-column-start: 3;
+  grid-column-end: 100;
+  font-weight: bold;
+  background-color: white;
+}
+
+.titre>p {
+  background-color: white;
+  color: #0984e3;
+  margin-top: 0;
+}
+
+.titre>h1 {
+  margin: 5px;
+  text-align: center;
+}
+
+.titre>p {
+  border-bottom: none;
+}
+
+.blue {
+  background-color: #0984e3;
+}
+
+#item2 {
+  grid-row-start: 18;
+  grid-row-end: 44;
+  grid-column-start: 32;
+  grid-column-end: 48;
+}
+
+#item2top {
+  grid-row-start: 12;
+  grid-row-end: 17;
+  grid-column-start: 32;
+  grid-column-end: 48;
+  border-bottom : 5px solid white;
+}
+
+#item3 {
+  grid-row-start: 12;
+  grid-row-end: 40;
+  grid-column-start: 49;
+  grid-column-end: 71;
+}
+
+
+h4 {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+h5 {
+  color: white;
+  font-weight: bold;
+  text-align: right;
+  padding-right: 10px;
+}
+
+
+p {
+  background-color: #74b9ff;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  padding: 15px 28px 15px 29px;
+  margin: 0 10px 0 10px;
+  font-weight: bold;
+  border-bottom: 5px solid #0984e3;
+}
+
+#third {
+  border-bottom: none;
+}
+
+.con {
+  border-bottom: none;
+  background-color: #00b3b3;
+  border-right: solid 10px #74b9ff;
+  border-left: solid 10px #74b9ff;
+  border-bottom: solid 10px #74b9ff;
+}
+
+#con {
+  padding-left: 60px;
+  padding-right: 60px;
+}
+
+#goBack {
+  width: 50px;
+  height: 50px;
+  background-color: #0984e3;
+}
+
+.goBack {
+  grid-row-start: 43;
+  grid-row-end: 46;
+  grid-column-start: 80;
+  grid-column-end: 100;
+  display: inline-block;
+}
+
+.goBack>p {
+  color: #0984e3;
+  background-color: white;
+  border-bottom: none;
+  padding: 0 0 15px 0;
+}
