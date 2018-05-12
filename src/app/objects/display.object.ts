@@ -1,5 +1,4 @@
 export class DisplayObject {
-  // nav: boolean;
+  nav: boolean;
   foot: boolean;
-  // both: boolean;
 }

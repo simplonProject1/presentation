@@ -8,8 +8,6 @@
 </div>
 <div class="grid-container">
   <img src="assets\img\Accolade.png" id="acc">
-  <div *ngIf="colors.red" class="redDiv"></div>
-  <div *ngIf="colors.yellow" class="yellowDiv"></div>
   <div id="content">
     <h3>BW</h3>
     <p class="bpc">BPC11</p>
@@ -37,10 +35,6 @@
   <img src="assets\img\cube.png" id="cube">
   <p id="metrics">Transaction Metrics</p>
 
-
-  <div *ngIf="colors.grey" class="grayDiv"></div>
-  <div class="item4 bigdiv">
-  </div>
   <h5 id="hana">S/4HANA</h5>
   <div class="item5 bigdiv">
     <p>CO
@@ -49,22 +43,17 @@
   <div class="item6 bigdiv">
     <p>FI</p>
   </div>
-  <div class="itemrouge bigdiv">
+  <div *ngIf="colors.red" routerLink="/apptio" class="itemrouge bigdiv">
     <p>APPTIO
       <br>Allocation Sub-Ledger for Supply Chain</p>
   </div>
-  <div *ngIf=colors.green class="itemvert bigdiv">
+  <div *ngIf="colors.green" class="itemvert bigdiv">
     <p>Commercial Business Units
       <br>(ACU, TCH, SGB)
     </p>
   </div>
   <h2 id="top">HANA (AMADEUS CLOUD)</h2>
   <h2 id="left">Manpower +<br>Non-Manpower Costs</h2>
-  <!--<div *ngIf="colors.green" class="greenDiv"></div>-->
-  <!--<canvas [hidden]="!colors.red" #arrow id="redCanvas"></canvas>-->
-  <!--<app-arrow [hidden]="!colors.green" id="greenCanvas" [lines]="greenLines" [color]="'green'"></app-arrow>-->
-  <!--<app-arrow [hidden]="!colors.green" id="blueCanvas" [lines]="[createLine(10, 10, 50, 50), createLine(10, 90, 108, 10)]" [color]="'green'"></app-arrow>-->
-  <!--<app-arrow [hidden]="!colors.red" id="redCanvas2" [lines]="redLines" [color]="'red'"></app-arrow>-->
 
   <app-arrow   [hidden]="!colors.green" id="greenCanvas2"
                [lines]="[createPoint(1, 40), createPoint(190, 40)]"
@@ -108,14 +97,6 @@
              [color]="'#B53431'"
              [direction]="'down'"
   ></app-arrow>
-
-  <!--
-      <app-arrow   [hidden]="!colors.grey" id="grayCanvas"
-               [lines]="[createPoint(20, 60), createPoint(20, 20)]"
-               [color]="'grey'"
-               [direction]="'up'"
-    ></app-arrow>
-  -->
 
   <app-arrow   [hidden]="!colors.green" id="greenCanvas3"
                [lines]="[createPoint(20, 60), createPoint(20, 20)]"

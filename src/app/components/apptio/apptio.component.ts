@@ -1,5 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-apptio',
@@ -8,6 +7,6 @@ import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 })
 export class ApptioComponent {
 
-  constructor(public activeModal: NgbActiveModal) {}
+  constructor() {}
 
 }

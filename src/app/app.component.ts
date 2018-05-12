@@ -1,16 +1,22 @@
-import { Component } from '@angular/core';
-import {ToggleViewService} from './services/toggleview.service';
-import {ToggleDisplayService} from './services/toggle-display.service';
+import { Component, OnInit } from '@angular/core';
+import { ToggleViewService } from './services/toggleview.service';
+import { ToggleDisplayService } from './services/toggle-display.service';
+import { DisplayObject} from './objects/display.object';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
-  // co z tego co wyżej jest potrzebne
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
+
+  display: DisplayObject;
 
   constructor (public toggleView: ToggleViewService, public toggleDisplayService: ToggleDisplayService) {
+  }
+
+  ngOnInit() {
+    this.display = this.toggleDisplayService.display;
   }
 
   toggleColor(color: string): void {
@@ -19,6 +25,10 @@ export class AppComponent {
 
   toggleDisplay(display: string): void {
     this.toggleDisplayService.setDisplay(display);
+  }
+
+  get year(): number {
+    return this.toggleDisplayService.year;
   }
 
 }

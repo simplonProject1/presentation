@@ -12,6 +12,7 @@ import {Mp2019Component} from '../mp2019/mp2019.component';
 export class StartComponent {
 
   constructor(private modalService: NgbModal) { }
+
   open(content) {
 
     let modalRef: any;

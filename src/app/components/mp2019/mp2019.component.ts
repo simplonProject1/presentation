@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import { ToggleDisplayService } from '../../services/toggle-display.service';
 
 @Component({
   selector: 'app-mp2019',
@@ -7,6 +8,14 @@ import { Component } from '@angular/core';
 })
 export class Mp2019Component {
 
-  constructor() {}
+  constructor(public toggleDisplayService: ToggleDisplayService) {}
+
+  toggleDisplay(display: string): void {
+    this.toggleDisplayService.setDisplay(display);
+  }
+
+  get year(): number {
+    return this.toggleDisplayService.year;
+  }
 
 }

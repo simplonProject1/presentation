@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { ToggleViewService } from './services/toggleview.service';
-import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { Year2018Component } from './components/year2018/year2018.component';
@@ -13,13 +13,13 @@ import { ArrowComponent } from './components/arrow/arrow.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { MatrixComponent } from './components/modal/content/matrix/matrix.component';
 import { ApptioComponent } from './components/apptio/apptio.component';
-import {Mp2019Component} from './components/mp2019/mp2019.component';
-import {Mp2020Component} from './components/mp2020/mp2020.component';
-import {Bpc11Component} from './components/bpc11/bpc11.component';
-import {TpiComponent} from './components/modal/content/tpi/tpi.component';
+import { Mp2019Component } from './components/mp2019/mp2019.component';
+import { Mp2020Component } from './components/mp2020/mp2020.component';
+import { Bpc11Component } from './components/bpc11/bpc11.component';
+import { TpiComponent } from './components/tpi/tpi.component';
 import { Ppm2019Component } from './components/ppm2019/ppm2019.component';
 import { Ppm2020Component } from './components/ppm2020/ppm2020.component';
-import {ToggleDisplayService} from './services/toggle-display.service';
+import { ToggleDisplayService } from './services/toggle-display.service';
 
 
 const appRoutes: Routes = [
@@ -27,7 +27,10 @@ const appRoutes: Routes = [
   {path: 'year2018', component: Year2018Component},
   {path: 'year2019', component: Year2019Component},
   {path: 'year2020', component: Year2020Component},
-  {path: 'mp2019', component: Mp2019Component}
+  {path: 'mp2019', component: Mp2019Component},
+  {path: 'mp2020', component: Mp2020Component},
+  {path: 'tpi', component: TpiComponent},
+  {path: 'apptio', component: ApptioComponent}
 
 ];
 
@@ -59,6 +62,6 @@ const appRoutes: Routes = [
     ToggleDisplayService
   ],
   bootstrap: [AppComponent],
-  entryComponents: [ MatrixComponent, ApptioComponent ]
+  entryComponents: []
 })
 export class AppModule { }
