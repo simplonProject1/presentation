@@ -51,6 +51,55 @@
   <h2 id="top">IT LANDSCAPE</h2>
   <h2 id="left">Manpower +<br>Non-Manpower Costs</h2>
 
+  <app-arrow   [hidden]="!colors.green" id="greenCanvas2"
+               [lines]="[createPoint(1, 40), createPoint(190, 40)]"
+               [color]="'#6ab04c'"
+               [direction]="'right'"
+  ></app-arrow>
+
+
+  <app-arrow [hidden]="!colors.red" id="redCanvas"
+             [lines]="[createPoint(10, 1), createPoint(10, 120)]"
+             [color]="'#B53471'"
+             [direction]="'down'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.red" id="redCanvas2"
+             [lines]="[createPoint(10, 1), createPoint(10, 120)]"
+             [color]="'#B53471'"
+             [direction]="'down'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.yellow" id="yellowCanvas"
+             [lines]="[createPoint(10, 120 ), createPoint(10, 15)]"
+             [color]="'yellow'"
+             [direction]="'up'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.yellow" id="yellowCanvas2"
+             [lines]="[createPoint(10, 120), createPoint(10, 15)]"
+             [color]="'yellow'"
+             [direction]="'up'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.yellow" id="yellowCanvas3"
+             [lines]="[createPoint(10, 80), createPoint(10, 120)]"
+             [color]="'yellow'"
+             [direction]="'down'"
+  ></app-arrow>
+
+  <app-arrow   [hidden]="!colors.grey" id="grayCanvas"
+               [lines]="[createPoint(20, 60), createPoint(20, 20)]"
+               [color]="'grey'"
+               [direction]="'up'"
+  ></app-arrow>
+
+  <app-arrow   [hidden]="!colors.green" id="greenCanvas3"
+               [lines]="[createPoint(20, 60), createPoint(20, 20)]"
+               [color]="'#6ab04c'"
+               [direction]="'up'"
+  ></app-arrow>
+
 
   <!--<div *ngIf="colors.green" class="greenDiv"></div>-->
 

@@ -53,21 +53,47 @@
   <h2 id="left">Manpower +<br>Non-Manpower Costs</h2>
 
 
-  <div *ngIf="colors.green" class="greenDiv"></div>
-
-
-
-  <canvas [hidden]="!colors.red" #arrow id="redCanvas"></canvas>
-
-  <app-arrow [hidden]="!colors.green" id="greenCanvas2"
-             [lines]="[createPoint(1, 6), createPoint(60, 6), createPoint(60, 50), createPoint(115, 50)]"
-             [color]="'green'"
-             [direction]="'right'"
+  <app-arrow   [hidden]="!colors.green" id="greenCanvas2"
+               [lines]="[createPoint(1, 40), createPoint(190, 40)]"
+               [color]="'#6ab04c'"
+               [direction]="'right'"
   ></app-arrow>
-  <app-arrow [hidden]="!colors.grey" id="greyCanvas1"
-             [lines]="[createPoint(1, 1), createPoint(60, 60)]"
-             [color]="'grey'"
-             [direction]="'left'"
+
+
+  <app-arrow [hidden]="!colors.red" id="redCanvas"
+             [lines]="[createPoint(10, 1), createPoint(10, 120)]"
+             [color]="'#B53471'"
+             [direction]="'down'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.red" id="redCanvas2"
+             [lines]="[createPoint(10, 1), createPoint(10, 120)]"
+             [color]="'#B53471'"
+             [direction]="'down'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.yellow" id="yellowCanvas"
+             [lines]="[createPoint(10, 120 ), createPoint(10, 15)]"
+             [color]="'yellow'"
+             [direction]="'up'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.yellow" id="yellowCanvas2"
+             [lines]="[createPoint(10, 120), createPoint(10, 15)]"
+             [color]="'yellow'"
+             [direction]="'up'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.yellow" id="yellowCanvas3"
+             [lines]="[createPoint(10, 80), createPoint(10, 120)]"
+             [color]="'yellow'"
+             [direction]="'down'"
+  ></app-arrow>
+
+  <app-arrow   [hidden]="!colors.grey" id="grayCanvas3"
+               [lines]="[createPoint(1, 40), createPoint(50, 40)]"
+               [color]="'grey'"
+               [direction]="'right'"
   ></app-arrow>
 
 

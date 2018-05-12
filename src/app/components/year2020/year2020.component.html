@@ -53,7 +53,7 @@
     <p>APPTIO
       <br>Allocation Sub-Ledger for Supply Chain</p>
   </div>
-  <div class="itemvert bigdiv">
+  <div *ngIf=colors.green class="itemvert bigdiv">
     <p>Commercial Business Units
       <br>(ACU, TCH, SGB)
     </p>
@@ -65,4 +65,72 @@
   <!--<app-arrow [hidden]="!colors.green" id="greenCanvas" [lines]="greenLines" [color]="'green'"></app-arrow>-->
   <!--<app-arrow [hidden]="!colors.green" id="blueCanvas" [lines]="[createLine(10, 10, 50, 50), createLine(10, 90, 108, 10)]" [color]="'green'"></app-arrow>-->
   <!--<app-arrow [hidden]="!colors.red" id="redCanvas2" [lines]="redLines" [color]="'red'"></app-arrow>-->
+
+  <app-arrow   [hidden]="!colors.green" id="greenCanvas2"
+               [lines]="[createPoint(1, 40), createPoint(190, 40)]"
+               [color]="'#6ab04c'"
+               [direction]="'right'"
+  ></app-arrow>
+
+
+  <app-arrow [hidden]="!colors.red" id="redCanvas"
+             [lines]="[createPoint(10, 1), createPoint(10, 80)]"
+             [color]="'#B53471'"
+             [direction]="'down'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.red" id="redCanvas2"
+             [lines]="[createPoint(10, 45), createPoint(10, 85)]"
+             [color]="'#B53471'"
+             [direction]="'down'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.yellow" id="yellowCanvas"
+             [lines]="[createPoint(10, 85 ), createPoint(10, 15)]"
+             [color]="'yellow'"
+             [direction]="'up'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!colors.yellow" id="yellowCanvas2"
+             [lines]="[createPoint(10, 105), createPoint(10, 60)]"
+             [color]="'yellow'"
+             [direction]="'up'"
+  ></app-arrow>
+  <app-arrow [hidden]="!colors.yellow" id="yellowCanvas3"
+             [lines]="[createPoint(10, 93), createPoint(10, 60)]"
+             [color]="'yellow'"
+             [direction]="'up'"
+  ></app-arrow>
+
+
+  <app-arrow [hidden]="!colors.red" id="redCanvas3"
+             [lines]="[createPoint(10, 80), createPoint(10, 120)]"
+             [color]="'#B53431'"
+             [direction]="'down'"
+  ></app-arrow>
+
+  <!--
+      <app-arrow   [hidden]="!colors.grey" id="grayCanvas"
+               [lines]="[createPoint(20, 60), createPoint(20, 20)]"
+               [color]="'grey'"
+               [direction]="'up'"
+    ></app-arrow>
+  -->
+
+  <app-arrow   [hidden]="!colors.green" id="greenCanvas3"
+               [lines]="[createPoint(20, 60), createPoint(20, 20)]"
+               [color]="'#6ab04c'"
+               [direction]="'up'"
+  ></app-arrow>
+  <app-arrow   [hidden]="!colors.green" id="greenCanvas4"
+               [lines]="[createPoint(20, 20), createPoint(40, 20)]"
+               [color]="'#6ab04c'"
+               [direction]="'right'"
+  ></app-arrow>
+  <app-arrow
+    [hidden]="!colors.green" id="greenCanvas5"
+    [lines]="[createPoint(40, 20), createPoint(20, 20)]"
+    [color]="'#6ab04c'"
+    [direction]="'left'"
+  ></app-arrow>
 </div>
