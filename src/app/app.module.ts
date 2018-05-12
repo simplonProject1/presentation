@@ -11,13 +11,14 @@ import { Year2020Component } from './components/year2020/year2020.component';
 import { StartComponent } from './components/start/start.component';
 import { ArrowComponent } from './components/arrow/arrow.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { MatrixComponent } from './components/modal/content/matrix/matrix.component';
+import { ApptioComponent } from './components/modal/content/apptio/apptio.component';
 
 const appRoutes: Routes = [
   {path: '', component: StartComponent},
   {path: 'year2018', component: Year2018Component},
   {path: 'year2019', component: Year2019Component},
   {path: 'year2020', component: Year2020Component},
-  {path: 'modal', component: ModalComponent}
 
 ];
 
@@ -29,16 +30,19 @@ const appRoutes: Routes = [
     Year2020Component,
     StartComponent,
     ArrowComponent,
-    ModalComponent
+    ModalComponent,
+    MatrixComponent,
+    ApptioComponent
   ],
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    NgbModule
+    NgbModule.forRoot()
   ],
   providers: [
-    ToggleViewService
+    ToggleViewService,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ MatrixComponent, ApptioComponent ]
 })
 export class AppModule { }

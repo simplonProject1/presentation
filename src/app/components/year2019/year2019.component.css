@@ -4,6 +4,7 @@
   padding: 5px;
   text-align: center;
   margin: 0px;
+  font-family: 'Poppins', sans-serif;
 }
 
 .item3>h1 {
@@ -22,10 +23,9 @@
   grid-template-columns: repeat(100, 1%);
   grid-template-rows: repeat(50, 2%);
   text-align: center;
-  height: 570px;
+  height: 600px;
   width: 1200px;
   margin: auto;
-  border: 1px solid black;
 }
 
 .bigdiv {
@@ -51,6 +51,7 @@
   grid-column-end: 90;
   grid-row-start: 30;
   grid-row-end: 38;
+  border-top: 1px solid lightblue;
 }
 
 .item5 {
@@ -72,7 +73,7 @@
 #ecc {
   grid-column-start: 58;
   grid-column-end: 60;
-  grid-row-start: 28;
+  grid-row-start: 29;
   grid-row-end: 29;
   color: white;
   font-weight: bold;
@@ -85,6 +86,7 @@
   grid-row-start: 38;
   grid-row-end: 42;
   background-color: #B53471;
+  border-top: 4px solid white;
 }
 
 .itemrouge>p {
@@ -103,11 +105,12 @@ p {
 
 h3 {
   color: white;
+  margin: 2px 0 2px 0;
 }
 
 #blue {
-  background-color: #2980b9;
-  padding: 4px;
+  background-color: #00b3b3;
+  padding: 8px 0 8px 0;
 }
 
 .bpc {
@@ -141,26 +144,27 @@ h3 {
   grid-row-start: 5;
   grid-row-end: 40;
   height: 350px;
-
 }
 
 #cube {
-  grid-column-start: 30;
-  grid-column-end: 32;
-  grid-row-start: 21;
-  grid-row-end: 23;
+  grid-column-start: 33;
+  grid-column-end: 35;
+  grid-row-start: 20;
+  grid-row-end: 22;
   height: 80px;
   z-index: 10;
 }
+
 #metrics {
   grid-column-start: 33;
   grid-column-end: 34;
   grid-row-start: 27;
   grid-row-end: 27;
-  margin : 0;
+  margin: 0;
   padding: 0;
   background-color: #0984e3;
 }
+
 
 
 

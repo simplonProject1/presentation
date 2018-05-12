@@ -1,57 +1,37 @@
 import { Component, OnInit, Input } from '@angular/core';
 import {NgbModal, NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
+import {MatrixComponent} from './content/matrix/matrix.component';
+import {ApptioComponent} from './content/apptio/apptio.component';
 
 @Component({
   selector: 'app-modal',
   templateUrl: './modal.component.html',
-  styleUrls: ['./modal.component.css']
+  styleUrls: ['./modal.component.css'],
 })
 export class ModalComponent implements OnInit {
 
+  @Input()
+  content: string;
+
   constructor(private modalService: NgbModal) {}
 
-  open() {
-    const modalRef = this.modalService.open(NgbdModalContentComponent);
-    modalRef.componentInstance.name = 'World';
-  }
+  // open() {
+  //   switch (this.content) {
+  //     case 'matrix':
+  //       const modalRef = this.modalService.open(MatrixComponent);
+  //       modalRef.componentInstance.name = 'World';
+  //       break;
+  //     case ('apptio'):
+  //       const modalRef = this.modalService.open(ApptioComponent);
+  //       modalRef.componentInstance.name = 'World';
+  //       break;
+  //     default:
+  //       break;
+  //   }
+  //
+  // }
 
   ngOnInit() {
   }
 
 }
-
-@Component({
-  // selector: 'app-ngbd-modal-content',
-  // template: '
-  //   <div class="modal-header">
-  //     <h4 class="modal-title">Hi there!</h4>
-  //     <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
-  //       <span aria-hidden="true">&times;</span>
-  //     </button>
-  //   </div>
-  //   <div class="modal-body">
-  //     <p>Hello, {{name}}!</p>
-  //   </div>
-  //   <div class="modal-footer">
-  //     <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
-  //   </div>
-  // '
-})
-export class NgbdModalContentComponent {
-  @Input() name;
-
-  constructor(public activeModal: NgbActiveModal) {}
-}
-
-// @Component({
-//   selector: 'ngbd-modal-component',
-//   templateUrl: './modal-component.html'
-// })
-// export class NgbdModalComponent {
-//   // constructor(private modalService: NgbModal) {}
-//   //
-//   // open() {
-//   //   const modalRef = this.modalService.open(NgbdModalContent);
-//   //   modalRef.componentInstance.name = 'World';
-//   // }
-// }

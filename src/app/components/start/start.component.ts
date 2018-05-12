@@ -1,6 +1,7 @@
-import { Component, Input, OnInit } from '@angular/core';
-
-import { NgbModal, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
+import {Component, Input} from '@angular/core';
+import {MatrixComponent} from '../modal/content/matrix/matrix.component';
+import {ApptioComponent} from '../modal/content/apptio/apptio.component';
+import {NgbModal} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-start',
@@ -8,47 +9,24 @@ import { NgbModal, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./start.component.css']
 })
 
-export class StartComponent implements OnInit {
+export class StartComponent {
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
+  open(content) {
 
-  ngOnInit() {
-  }
+    let modalRef: any;
 
-}
-
-@Component({
-  selector: 'app-ngbd-modal-content',
-  template: `
-    <div class="modal-header">
-      <h4 class="modal-title">Hi there!</h4>
-      <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
-        <span aria-hidden="true">&times;</span>
-      </button>
-    </div>
-    <div class="modal-body">
-      <p>Hello, {{name}}!</p>
-    </div>
-    <div class="modal-footer">
-      <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
-    </div>
-  `
-})
-export class NgbdModalContentComponent {
-  @Input() name;
-
-  constructor(public activeModal: NgbActiveModal) {}
-}
-
-@Component({
-  selector: 'app-ngbd-modal-component',
-  templateUrl: './start.component.html'
-})
-export class NgbdModalComponent {
-  constructor(private modalService: NgbModal) {}
-
-  open() {
-    const modalRef = this.modalService.open(NgbdModalContentComponent);
-    modalRef.componentInstance.name = 'World';
+    switch (content) {
+      case 'matrix':
+        modalRef = this.modalService.open(MatrixComponent);
+        modalRef.componentInstance.name = 'World';
+        break;
+      case ('apptio'):
+        modalRef = this.modalService.open(ApptioComponent);
+        modalRef.componentInstance.name = 'World';
+        break;
+      default:
+        break;
+    }
   }
 }
