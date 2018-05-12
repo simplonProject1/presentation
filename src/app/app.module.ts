@@ -21,7 +21,6 @@ import { Ppm2019Component } from './components/ppm2019/ppm2019.component';
 import { Ppm2020Component } from './components/ppm2020/ppm2020.component';
 import { ToggleDisplayService } from './services/toggle-display.service';
 
-
 const appRoutes: Routes = [
   {path: '', component: StartComponent},
   {path: 'year2018', component: Year2018Component},
