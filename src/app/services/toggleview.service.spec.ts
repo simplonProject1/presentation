@@ -1,15 +1,15 @@
 import { TestBed, inject } from '@angular/core/testing';
 
-import { ToggleviewService } from './toggleview.service';
+import { ToggleViewService } from './toggleview.service';
 
 describe('ToggleviewService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      providers: [ToggleviewService]
+      providers: [ToggleViewService]
     });
   });
 
-  it('should be created', inject([ToggleviewService], (service: ToggleviewService) => {
+  it('should be created', inject([ToggleViewService], (service: ToggleViewService) => {
     expect(service).toBeTruthy();
   }));
 });

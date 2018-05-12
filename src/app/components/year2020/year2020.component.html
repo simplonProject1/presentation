@@ -1,3 +1,68 @@
-<p>
-  year2020 works!
-</p>
+<div class="item3">
+  <h1>ARCHITECTURE – 2020 Model</h1>
+  <p>Red Lines :
+    <br>Move allocation Metrics beyond traditional capacity budgeting, to next generation actual business drivers.
+    <br>Incorporate in the Target GFT 2020 Architecture.
+    <br>One Source of Data.
+  </p>
+</div>
+<div class="grid-container">
+  <img src="assets\img\Accolade.png" id="acc">
+  <div *ngIf="colors.red" class="redDiv"></div>
+  <div *ngIf="colors.yellow" class="yellowDiv"></div>
+  <div id="content">
+    <h3>BW</h3>
+    <p class="bpc">BPC11</p>
+    <div id="item1">
+      <header>
+        <p class="blue left">Corporate IPPM</p>
+      </header>
+      <p>Projects
+        <br>
+        <br>Supply Products / App</p>
+    </div>
+    <div id="item2">
+      <header>
+        <p class="blue right">Capacity Planning</p>
+      </header>
+      <p>Legal entity
+        <br>
+        <br>Cost centers / Internal
+        <br>
+        <br>Orders</p>
+    </div>
+  </div>
+
+
+  <img src="assets\img\cube.png" id="cube">
+  <p id="metrics">Transaction Metrics</p>
+
+
+  <div *ngIf="colors.grey" class="grayDiv"></div>
+  <div class="item4 bigdiv">
+  </div>
+  <h5 id="hana">S/4HANA</h5>
+  <div class="item5 bigdiv">
+    <p>CO
+      <br>Allocations - all except Supply Manpower Supply</p>
+  </div>
+  <div class="item6 bigdiv">
+    <p>FI</p>
+  </div>
+  <div class="itemrouge bigdiv">
+    <p>APPTIO
+      <br>Allocation Sub-Ledger for Supply Chain</p>
+  </div>
+  <div class="itemvert bigdiv">
+    <p>Commercial Business Units
+      <br>(ACU, TCH, SGB)
+    </p>
+  </div>
+  <h2 id="top">HANA (AMADEUS CLOUD)</h2>
+  <h2 id="left">Manpower +<br>Non-Manpower Costs</h2>
+  <div *ngIf="colors.green" class="greenDiv"></div>
+  <canvas [hidden]="!colors.red" #arrow id="redCanvas"></canvas>
+  <app-arrow [hidden]="!colors.green" id="greenCanvas" [lines]="greenLines" [color]="'green'"></app-arrow>
+  <app-arrow [hidden]="!colors.green" id="blueCanvas" [lines]="[createLine(10, 10, 50, 50), createLine(10, 90, 108, 10)]" [color]="'green'"></app-arrow>
+  <app-arrow [hidden]="!colors.red" id="redCanvas2" [lines]="redLines" [color]="'red'"></app-arrow>
+</div>

@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Year2019Component implements OnInit {
 
-  constructor() { }
+  fullImagePath: string;
+
+  constructor() {
+    this.fullImagePath = 'assets/images/gitqr.png';
+  }
 
   ngOnInit() {
   }
 
 }
+

@@ -1,55 +1,73 @@
-<div class="item3">BIG TITLE</div>
+<div class="item3"><h1>ARCHITECTURE – Actual Model</h1><br><p>The TPE cost model will cover the all manpower and non-manpower costs across the TPE portfolio, including supply chain, project factory and overheads, <br>and describes the allocation of these costs towards BUs and internal portfolio.</p></div>
 <div class="grid-container">
+
+
+  <img src="assets\img\Accolade.png" id="acc">
 
   <div *ngIf="colors.red" class="redDiv"></div>
 
   <div *ngIf="colors.yellow" class="yellowDiv"></div>
 
   <div class="item1 bigdiv">
-    <h3>TITLE</h3>
-    <p>Something 1</p>
-    <p>Something 2</p>
-    <p>Something 3</p>
+    <h3>BW</h3>
+    <p class="bpc">BPC10</p>
+    <p id="blue">IPPM</p><p>Projects<br><br>Generic TPE line</p>
   </div>
 
+
+  <img src="assets\img\cube.png" id="cube">
+  <p id="metrics">Transaction Metrics</p>
+
+
   <div class="item2 bigdiv">
-    <h3>TITLE</h3>
-    <p>Something 4</p>
-    <p>Something 5</p>
+    <h3>BW</h3>
+    <p class="bpc">BPC10</p>
+    <p id="blue">Capacity Planning</p><p>Legal entity<br><br>Cost centers / Internal<br><br>Orders</p>
   </div>
+
+
+
+
 
   <div *ngIf="colors.grey" class="grayDiv"></div>
 
   <div class="item4 bigdiv">
-    <h3>TITLE</h3>
-    <p>Something 6</p>
-    <p>Something 7</p>
   </div>
+
+  <h5 id="ecc">ECC</h5>
+  <div class="item5 bigdiv">
+    <p>CO<br>Allocations - all except Supply Manpower Supply</p>
+  </div>
+
+
+  <div class="item6 bigdiv">
+    <p>FI</p>
+  </div>
+
+  <div class="itemrouge bigdiv">
+    <p>APPTIO<br>Allocation Sub-Ledger for Supply Chain</p>
+  </div>
+
+  <h2 id="top">IT LANDSCAPE</h2>
+  <h2 id="bottom">REPORTING ONLY</h2>
+  <h2 id="left">Manpower +<br>Non-Manpower Costs</h2>
+
 
   <div *ngIf="colors.green" class="greenDiv"></div>
 
-  <div class="item5 bigdiv">
-    <h3>TITLE</h3>
-    <p>Something 8</p>
-    <p>Something 9</p>
-    <p>Something 10</p>
-  </div>
+
 
   <canvas [hidden]="!colors.red" #arrow id="redCanvas"></canvas>
 
-  <app-arrow [hidden]="!colors.green" id="greenCanvas"
-             [lines]="greenLines"
+  <app-arrow [hidden]="!colors.green" id="greenCanvas2"
+             [lines]="[createPoint(1, 6), createPoint(60, 6), createPoint(60, 50), createPoint(115, 50)]"
              [color]="'green'"
+             [direction]="'right'"
   ></app-arrow>
-
-  <app-arrow [hidden]="!colors.green" id="blueCanvas"
-             [lines]="[createLine(10, 10, 50, 50), createLine(10, 90, 108, 10)]"
-             [color]="'green'"
-  ></app-arrow>
-
-  <app-arrow [hidden]="!colors.red" id="redCanvas2"
-             [lines]="redLines"
-             [color]="'red'"
+  <app-arrow [hidden]="!colors.grey" id="greyCanvas1"
+             [lines]="[createPoint(1, 1), createPoint(60, 60)]"
+             [color]="'grey'"
+             [direction]="'left'"
   ></app-arrow>
 
 

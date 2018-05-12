@@ -1,0 +1,266 @@
+.item3 {
+  grid-column-start: 5;
+  grid-column-end: 95;
+  padding: 5px;
+  text-align: center;
+  margin: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.item3>h1 {
+  margin-bottom: 0px;
+  margin-top: 2px;
+  color: #0984e3;
+}
+
+.item3>p {
+  color: #0984e3;
+  background-color: white;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(100, 1%);
+  grid-template-rows: repeat(50, 2%);
+  text-align: center;
+  height: 600px;
+  width: 1200px;
+  margin: auto;
+}
+
+.bigdiv {
+  background-color: #0984e3;
+}
+
+#content {
+  grid-column-start: 30;
+  grid-column-end: 75;
+  grid-row-start: 5;
+  grid-row-end: 30;
+  background-color: #0984e3;
+}
+
+#item1 .left {
+  display: inline-block;
+  width: 150px;
+  grid-column-start: 10;
+  grid-column-end: 45;
+  grid-row-start: 5;
+  grid-row-end: 30;
+  float: left;
+  clear: both;
+  margin-left: 50px;
+}
+
+#item1>p {
+  display: inline-block;
+  width: 150px;
+  float: left;
+  clear: both;
+  margin-left: 50px;
+}
+
+#item2 .right {
+  display: inline-block;
+  width: 150px;
+  grid-column-start: 50;
+  grid-column-end: 70;
+  grid-row-start: 5;
+  grid-row-end: 30;
+  margin-left: 100px;
+}
+
+#item2>p {
+  display: inline-block;
+  width: 150px;
+  margin-left: 100px;
+}
+
+.item4 {
+  grid-column-start: 30;
+  grid-column-end: 75;
+  grid-row-start: 30;
+  grid-row-end: 38;
+  border-top: 1px solid lightblue;
+}
+
+.item5 {
+  grid-column-start: 34;
+  grid-column-end: 47;
+  grid-row-start: 31;
+  grid-row-end: 36;
+  background-color: lightblue;
+  border-bottom: 4px solid #0984e3;
+  font-size: 14px;
+}
+
+.item6 {
+  grid-column-start: 59;
+  grid-column-end: 71;
+  grid-row-start: 31;
+  grid-row-end: 38;
+  background-color: lightblue;
+  border-bottom: 4px solid #0984e3;
+}
+
+#hana {
+  grid-column-start: 48;
+  grid-column-end: 60;
+  grid-row-start: 28;
+  grid-row-end: 29;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+  padding-top: 4px;
+}
+
+.itemrouge {
+  grid-column-start: 30;
+  grid-column-end: 75;
+  grid-row-start: 38;
+  grid-row-end: 42;
+  background-color: #B53471;
+  border-top: 4px solid white;
+}
+
+.itemrouge>p {
+  background-color: #B53471;
+  margin: 0px;
+  font-weight: bold;
+}
+
+.itemvert {
+  grid-column-start: 78;
+  grid-column-end: 86;
+  grid-row-start: 5;
+  grid-row-end: 25;
+  background-color: #6ab04c;
+}
+
+.itemvert>p {
+  background-color: #6ab04c;
+  padding: 60px 3px 0px 3px;
+}
+
+p {
+  background-color: lightblue;
+  margin: 0px;
+  color: white;
+  font-weight: bolder;
+  padding: 8px 2px 6px 2px;
+}
+
+h3 {
+  color: white;
+  font-weight: bold;
+  margin: 2px 0 2px 0;
+}
+
+.blue {
+  background-color: #00b3b3;
+  padding: 8px 4px 8px 0;
+}
+
+.bpc {
+  background-color: #0652DD;
+}
+
+
+#top {
+  grid-column-start: 36;
+  grid-column-end: 70;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  font-size: 16px;
+  color: #0984e3;
+  font-weight: bold;
+}
+
+#left {
+  grid-column-start: 4;
+  grid-column-end: 14;
+  grid-row-start: 18;
+  grid-row-end: 20;
+  font-size: 16px;
+  color: #0984e3;
+  font-weight: bolder;
+}
+
+#acc {
+  grid-column-start: 16;
+  grid-column-end: 17;
+  grid-row-start: 5;
+  grid-row-end: 40;
+  height: 350px;
+}
+
+
+#cube {
+  grid-column-start: 32;
+  grid-column-end: 34;
+  grid-row-start: 21;
+  grid-row-end: 23;
+  height: 80px;
+  z-index: 10;
+}
+
+#metrics {
+  grid-column-start: 33;
+  grid-column-end: 45;
+  grid-row-start: 28;
+  grid-row-end: 28;
+  margin: 0;
+  padding: 0;
+  background-color: #0984e3;
+  diplay: inline-block;
+}
+
+
+
+/*=============  CANVAS ==============================*/
+
+.redDiv {
+  background-color: darkred;
+  grid-column-start: 10;
+  grid-column-end: 20;
+  grid-row-start: 15;
+  grid-row-end: 25;
+}
+
+.grayDiv {
+  background-color: dimgray;
+  grid-column-start: 30;
+  grid-column-end: 70;
+  grid-row-start: 42;
+  grid-row-end: 50;
+}
+
+.greenDiv {
+  background-color: darkgreen;
+  grid-column-start: 75;
+  grid-column-end: 82;
+  grid-row-start: 10;
+  grid-row-end: 35;
+}
+
+.yellowDiv {
+  background-color: yellow;
+  grid-column-start: 15;
+  grid-column-end: 20;
+  grid-row-start: 30;
+  grid-row-end: 35;
+}
+
+#redCanvas {
+  grid-column-start: 35;
+  grid-column-end: 50;
+  grid-row-start: 14;
+  grid-row-end: 24;
+}
+
+#greenCanvas {
+  grid-column-start: 55;
+  grid-column-end: 70;
+  grid-row-start: 34;
+  grid-row-end: 44;
+}

@@ -1,5 +1,5 @@
 import {Component, Input, OnInit, ViewChild} from '@angular/core';
-import {LineObject} from '../../objects/line';
+import {PointObject} from '../../objects/point.object';
 
 @Component({
   selector: 'app-arrow',
@@ -12,7 +12,10 @@ export class ArrowComponent implements OnInit {
   canvas: any;
 
   @Input()
-  lines: LineObject[];
+  lines: PointObject[];
+
+  @Input()
+  direction: string;
 
   @Input()
   color: string;
@@ -26,18 +29,58 @@ export class ArrowComponent implements OnInit {
   createCanvas() {
     const canvas = this.canvas.nativeElement;
     const ctx = canvas.getContext('2d');
-    for (const line of this.lines) {
-      this.drawLine(ctx, line);
+    this.createArrow(this.lines[this.lines.length - 1]);
+    ctx.moveTo(this.lines[0].beginX, this.lines[0].beginY);
+    for (const point of this.lines) {
+      this.drawLine(ctx, point);
     }
     ctx.stroke();
   }
 
-  drawLine(ctx, line) {
-    console.log(line);
-    ctx.moveTo(line.beginX, line.beginY);
+  drawLine(ctx, point) {
     ctx.strokeStyle = this.color;
+    ctx.lineTo(point.beginX, point.beginY);
     ctx.lineWidth = 7;
-    ctx.lineTo(line.endX, line.endY);
+  }
+
+  createArrow(point) {
+    switch (this.direction) {
+      case 'up':
+        this.lines.push(this.createPoint(point.beginX - 5, point.beginY));
+        this.lines.push(this.createPoint(point.beginX, point.beginY - 10));
+        this.lines.push(this.createPoint(point.beginX + 5, point.beginY));
+        this.lines.push(this.createPoint(point.beginX, point.beginY));
+        break;
+      case 'right':
+        this.lines.push(this.createPoint(point.beginX, point.beginY - 5));
+        this.lines.push(this.createPoint(point.beginX + 10, point.beginY));
+        this.lines.push(this.createPoint(point.beginX, point.beginY + 5));
+        this.lines.push(this.createPoint(point.beginX, point.beginY));
+        break;
+      case 'down':
+        this.lines.push(this.createPoint(point.beginX - 5, point.beginY));
+        this.lines.push(this.createPoint(point.beginX, point.beginY + 10));
+        this.lines.push(this.createPoint(point.beginX + 5, point.beginY));
+        this.lines.push(this.createPoint(point.beginX, point.beginY));
+        break;
+      case 'left':
+        this.lines.push(this.createPoint(point.beginX, point.beginY - 5));
+        this.lines.push(this.createPoint(point.beginX - 10, point.beginY));
+        this.lines.push(this.createPoint(point.beginX, point.beginY + 5));
+        this.lines.push(this.createPoint(point.beginX, point.beginY));
+        break;
+      default:
+        break;
+    }
+  }
+
+  createPoint(beginX, beginY) {
+    const point = new PointObject();
+    point.beginX = beginX;
+    point.beginY = beginY;
+    return point;
   }
 
 }
+
+

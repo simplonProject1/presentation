@@ -1,10 +1,19 @@
 .item3 {
   grid-column-start: 5;
   grid-column-end: 95;
-  padding: 20px;
-  background-color: lightblue;
+  padding: 5px;
   text-align: center;
-  margin: 10px;
+  margin: 0px;
+}
+
+.item3>h1 {
+  margin-bottom: 0px;
+  color: #0984e3;
+}
+
+.item3>p {
+  color: #0984e3;
+  background-color: white;
 }
 
 .grid-container {
@@ -12,7 +21,9 @@
   grid-template-columns: repeat(100, 1%);
   grid-template-rows: repeat(50, 2%);
   text-align: center;
-  height: 600px;
+  height: 580px;
+  width: 1200px;
+  margin: auto;
   border: 1px solid black;
 }
 
@@ -21,41 +32,163 @@
 }
 
 .item1 {
-  grid-column-start : 30;
+  grid-column-start: 30;
   grid-column-end: 45;
-  grid-row-start: 1;
-  grid-row-end: 15;
+  grid-row-start: 5;
+  grid-row-end: 30;
 }
 
 .item2 {
-  grid-column-start : 55;
-  grid-column-end: 70;
-  grid-row-start: 1;
-  grid-row-end: 15;
+  grid-column-start: 75;
+  grid-column-end: 90;
+  grid-row-start: 5;
+  grid-row-end: 30;
 }
 
 .item4 {
-  grid-column-start : 30;
-  grid-column-end: 45;
-  grid-row-start: 25;
-  grid-row-end: 40;
+  grid-column-start: 30;
+  grid-column-end: 90;
+  grid-row-start: 30;
+  grid-row-end: 38;
 }
 
 .item5 {
-  grid-column-start : 55;
-  grid-column-end: 70;
-  grid-row-start: 25;
-  grid-row-end: 40;
+  grid-column-start: 32;
+  grid-column-end: 45;
+  grid-row-start: 31;
+  grid-row-end: 36;
+  background-color: lightblue;
+}
+
+.item6 {
+  grid-column-start: 62;
+  grid-column-end: 73;
+  grid-row-start: 31;
+  grid-row-end: 38;
+  background-color: lightblue;
+}
+
+#flechev {
+  grid-column-start: 47;
+  grid-column-end: 50;
+  grid-row-start: 31;
+  grid-row-end: 36;
+  width: 600px;
+  height : 20px;
+  z-index: 10;
+}
+
+#ecc {
+  grid-column-start: 58;
+  grid-column-end: 60;
+  grid-row-start: 28;
+  grid-row-end: 29;
+  color: white;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.itemrouge {
+  grid-column-start: 30;
+  grid-column-end: 75;
+  grid-row-start: 38;
+  grid-row-end: 42;
+  background-color: #B53471;
+}
+
+.itemrouge>p {
+  background-color: #B53471;
+  margin: 0px;
+  font-weight: bold;
 }
 
 p {
   background-color: lightblue;
-  margin: 5px;
+  margin: 0px;
+  color: white;
+  font-weight: bolder;
+  padding: 8px 2px 6px 2px;
 }
+
+h3 {
+  color: white;
+}
+
+#blue {
+  background-color: #2980b9;
+  padding: 4px;
+}
+
+.bpc {
+  background-color: #0652DD;
+}
+
+
+#top {
+  grid-column-start: 50;
+  grid-column-end: 60;
+  grid-row-start: 2;
+  grid-row-end: 4;
+  font-size: 16px;
+  color: #0984e3;
+  font-weight: bold;
+}
+
+#bottom {
+  grid-column-start: 80;
+  grid-column-end: 89;
+  grid-row-start: 38;
+  grid-row-end: 38;
+  font-size: 16px;
+  color: #0984e3;
+  font-weight: bolder;
+}
+
+#left {
+  grid-column-start: 4;
+  grid-column-end: 14;
+  grid-row-start: 18;
+  grid-row-end: 20;
+  font-size: 16px;
+  color: #0984e3;
+  font-weight: bolder;
+}
+
+#acc {
+  grid-column-start: 16;
+  grid-column-end: 17;
+  grid-row-start: 5;
+  grid-row-end: 40;
+  height: 350px;
+
+}
+
+#cube {
+  grid-column-start: 30;
+  grid-column-end: 32;
+  grid-row-start: 21;
+  grid-row-end: 23;
+  height: 80px;
+  z-index: 10;
+}
+#metrics {
+  grid-column-start: 33;
+  grid-column-end: 34;
+  grid-row-start: 27;
+  grid-row-end: 27;
+  margin : 0;
+  padding: 0;
+  background-color: #0984e3;
+}
+
+
+
+
+/*=============  CANVAS ==============================*/
 
 .redDiv {
   background-color: darkred;
-  grid-column-start : 10;
+  grid-column-start: 10;
   grid-column-end: 20;
   grid-row-start: 15;
   grid-row-end: 25;
@@ -63,7 +196,7 @@ p {
 
 .grayDiv {
   background-color: dimgray;
-  grid-column-start : 30;
+  grid-column-start: 30;
   grid-column-end: 70;
   grid-row-start: 42;
   grid-row-end: 50;
@@ -71,7 +204,7 @@ p {
 
 .greenDiv {
   background-color: darkgreen;
-  grid-column-start : 75;
+  grid-column-start: 75;
   grid-column-end: 82;
   grid-row-start: 10;
   grid-row-end: 35;
@@ -79,24 +212,22 @@ p {
 
 .yellowDiv {
   background-color: yellow;
-  grid-column-start : 15;
+  grid-column-start: 15;
   grid-column-end: 20;
   grid-row-start: 30;
   grid-row-end: 35;
 }
 
-#redCanvas {
-  grid-column-start : 35;
+#greenCanvas2 {
+  grid-column-start: 35;
   grid-column-end: 50;
   grid-row-start: 14;
   grid-row-end: 24;
 }
 
-#greenCanvas {
-  grid-column-start : 55;
+#greyCanvas1 {
+  grid-column-start: 55;
   grid-column-end: 70;
   grid-row-start: 34;
   grid-row-end: 44;
 }
-
-
