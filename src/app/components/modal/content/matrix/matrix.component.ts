@@ -1,5 +1,4 @@
 import {Component} from '@angular/core';
-import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-matrix',
@@ -8,6 +7,6 @@ import {NgbActiveModal} from '@ng-bootstrap/ng-bootstrap';
 })
 export class MatrixComponent {
 
-  constructor(public activeModal: NgbActiveModal) {} // ważny!!!!
+  constructor() {} // ważny!!!!
 
 }
