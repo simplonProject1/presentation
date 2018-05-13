@@ -2,6 +2,7 @@ import {Component, OnInit, ViewChild} from '@angular/core';
 import { ToggleViewService } from '../../services/toggleview.service';
 import {ColorsObject} from '../../objects/colors.object';
 import {PointObject} from '../../objects/point.object';
+import { ToggleDisplayService } from '../../services/toggle-display.service';
 
 @Component({
   selector: 'app-year2018',
@@ -15,7 +16,7 @@ export class Year2018Component implements OnInit {
 
   colors: ColorsObject;
 
-  constructor(public toggleView: ToggleViewService) { } // konstruktor musi być w dwóch komponentach, żeby oba komponenty z niego korzystały
+  constructor(public toggleView: ToggleViewService, public toggleDisplayService: ToggleDisplayService) { }
 
   ngOnInit() {
     this.colors = this.toggleView.color;
@@ -26,6 +27,10 @@ export class Year2018Component implements OnInit {
     point.beginX = beginX;
     point.beginY = beginY;
     return point;
+  }
+
+  toggleDisplay(display: string): void {
+    this.toggleDisplayService.setDisplay(display);
   }
 }
 

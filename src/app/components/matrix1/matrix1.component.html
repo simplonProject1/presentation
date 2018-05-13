@@ -11,7 +11,11 @@
   <br>
 
   <div id="button">
-    <button id="blue"></button>
+    <!--osobny div button (zmienić id) wyświetlają się w zależności czy (start z) mp (chyba) czy z roku-->
+    <!--zmienna mp? boolan-->
+    <button *ngIf="year == 2018" class="blue2" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')" routerLink="/year2018"></button>
+    <button *ngIf="year == 2019" class="blue2" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')" routerLink="/year2019"></button>
+    <button *ngIf="year == 2020" class="blue2" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')" routerLink="/year2020"></button>
     <p>Go back</p>
   </div>
 
