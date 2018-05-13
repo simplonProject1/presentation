@@ -44,7 +44,7 @@
     <p>FI</p>
   </div>
 
-  <div *ngIf="colors.red" routerLink="/apptio" class="itemrouge bigdiv">
+  <div *ngIf="colors.red" routerLink="/apptio" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')" class="itemrouge bigdiv">
     <p>APPTIO<br>Allocation Sub-Ledger for Supply Chain</p>
   </div>
 

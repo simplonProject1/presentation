@@ -77,7 +77,7 @@
   grid-row-end: 29;
   color: white;
   font-weight: bold;
-  font-size: 14px;
+  font-size: 12px;
 }
 
 .itemrouge {
@@ -101,6 +101,7 @@ p {
   color: white;
   font-weight: bolder;
   padding: 8px 2px 6px 2px;
+  font-size: 14px;
 }
 
 h3 {
