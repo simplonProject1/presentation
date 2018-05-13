@@ -20,6 +20,7 @@ import { TpiComponent } from './components/tpi/tpi.component';
 import { Ppm2019Component } from './components/ppm2019/ppm2019.component';
 import { Ppm2020Component } from './components/ppm2020/ppm2020.component';
 import { ToggleDisplayService } from './services/toggle-display.service';
+import { Matrix1Component } from './components/matrix1/matrix1.component';
 
 const appRoutes: Routes = [
   {path: '', component: StartComponent},
@@ -29,7 +30,8 @@ const appRoutes: Routes = [
   {path: 'mp2019', component: Mp2019Component},
   {path: 'mp2020', component: Mp2020Component},
   {path: 'tpi', component: TpiComponent},
-  {path: 'apptio', component: ApptioComponent}
+  {path: 'apptio', component: ApptioComponent},
+  {path: 'matrix1', component: Matrix1Component}
 
 ];
 
@@ -50,6 +52,7 @@ const appRoutes: Routes = [
     TpiComponent,
     Ppm2019Component,
     Ppm2020Component,
+    Matrix1Component,
   ],
   imports: [
     BrowserModule,
