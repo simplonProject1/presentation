@@ -88,11 +88,6 @@
   padding-left: 20px;
 }
 
-
-/*#item5>h4#blueRed {
-  color: #b53471;
-}*/
-
 #cube {
   height: 80px;
   z-index: 10;
@@ -181,8 +176,8 @@ p {
 }
 
 #buttons {
-  grid-row-start: 40;
-  grid-row-end: 45;
+  grid-row-start: 38;
+  grid-row-end: 43;
   grid-column-start: 70;
   grid-column-end: 100;
 }
@@ -202,8 +197,8 @@ p {
   width: 50px;
   height: 50px;
   background-color: #0984e3;
+  border-bottom: 5px solid white;
 }
-
 
 #red {
   background: #b53471;
@@ -263,6 +258,6 @@ p {
   grid-column-start: 48;
   grid-column-end: 85;
   grid-row-start : 23;
-  grid-row-end: 45;
+  grid-row-end: 28;
   z-index: 100;
 }

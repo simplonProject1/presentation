@@ -205,11 +205,35 @@ p {
   padding: 0 0 15px 0;
 }
 
-
+#greenCanvas1{
+  grid-column-start: 25;
+  grid-column-end: 30;
+  grid-row : 24;
+  z-index: 10;
+}
 #greenCanvas2{
-  grid-column-start: 45;
-  grid-column-end: 46;
-  grid-column-end: 0;
-  grid-row : 31;
+  grid-column-start: 25;
+  grid-column-end: 26;
+  grid-row : 33;
+  z-index: 10;
+}
+#greenCanvas3{
+  grid-column-start: 25;
+  grid-column-end: 26;
+  grid-row : 20;
+  z-index: 10;
+}
+#greenCanvas4{
+  grid-column-start: 25;
+  grid-column-end: 26;
+  grid-row : 38;
+  z-index: 10;
+}
+
+#redCanvas1{
+  grid-column-start: 50;
+  grid-column-end: 52;
+  grid-row-start : 36;
+  grid-row-end: 38;
   z-index: 10;
 }

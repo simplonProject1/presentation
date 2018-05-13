@@ -1,7 +1,6 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
 import { ToggleDisplayService } from '../../services/toggle-display.service';
 import {PointObject} from '../../objects/point.object';
-import {DisplayMP} from '../mp2019/mp2019.component';
 
 @Component({
   selector: 'app-mp2020',
@@ -32,6 +31,7 @@ export class Mp2020Component implements OnInit {
 
   toggleColorMP2019(color: string): void {
     this.displayMP[color] = !this.displayMP[color];
+    console.log(color);
   }
 
   toggleDisplay(display: string): void {
@@ -42,4 +42,9 @@ export class Mp2020Component implements OnInit {
     return this.toggleDisplayService.year;
   }
 
+}
+
+export class DisplayMP {
+  red: boolean;
+  green: boolean;
 }
