@@ -37,11 +37,25 @@
 
   <h4 id="blueRed">Passengers bookings<br>Criteria : Airline = AF</h4>
 
+  <div class="red">
+    <button id="red" (click)="toggleColorMP2019('red')"></button>
+    <p>Transaction based Allocation Rules</p>
+  </div>
+
+  <div class="green">
+    <button id="green" (click)="toggleColorMP2019('green')"></button>
+    <p>Actual IT Towers Allocation Rules</p>
+  </div>
+
   <div class="goBack">
     <button id="goBack" routerLink="/mp2019"></button>
     <p>Go back to IPPM</p>
   </div>
 
-
+  <app-arrow  [hidden]="!displayMP.green"  id="greenCanvas2"
+              [lines]="[createPoint(1, 40), createPoint(190, 40)]"
+              [color]="'#6ab04c'"
+              [direction]="'right'"
+  ></app-arrow>
 
 </div>

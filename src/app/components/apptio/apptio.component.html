@@ -45,7 +45,7 @@
     <p>TECH APP : <br> BACK UP MANAGER</p>
   </div>
 
-  <img src="assets\img\cube.png" id="cube">
+  <img src="assets\img\cube.png" id="cube" routerLink="/matrix1">
 
   <div id="item3" class="blue">
     <h4>PRODUCTS</h4>
@@ -66,11 +66,11 @@
 
   <div id="buttons">
     <div class="button">
-      <button id="red"></button>
+      <button id="red" (click)="toggleColorMP2019('red')" ></button>
       <p>Actual IT Towers Allocation Rules</p>
     </div>
     <div class="button">
-      <button id="green"></button>
+      <button id="green" (click)="toggleColorMP2019('green')"></button>
       <p>Transaction based Allocation Rules</p>
     </div>
     <div class="button">
@@ -79,6 +79,10 @@
     </div>
   </div>
 
-
+  <app-arrow  [hidden]="!displayMP.green"  id="greenCanvas2"
+              [lines]="[createPoint(1, 40), createPoint(190, 40)]"
+              [color]="'#6ab04c'"
+              [direction]="'right'"
+  ></app-arrow>
 
 </div>

@@ -225,10 +225,44 @@ p {
   background-color: #0984e3;
 }
 
-#greenCanvas2{
-  grid-column-start: 45;
-  grid-column-end: 46;
-  grid-column-end: 0;
+#greenCanvas1{
+  grid-column-start: 29;
+  grid-column-end: 35;
   grid-row : 31;
   z-index: 10;
+}
+#greenCanvas3{
+  grid-column-start: 29;
+  grid-column-end: 39;
+  grid-row : 15;
+  z-index: 10;
+}
+#greenCanvas4{
+  grid-column-start: 41;
+  grid-column-end: 47;
+  grid-row-start : 36;
+  grid-row-end: 39;
+  z-index: 10;
+}
+#redCanvas1{
+  grid-column-start: 41;
+  grid-column-end: 47;
+  grid-row-start : 27;
+  grid-row-end: 29;
+  z-index: 10;
+}
+
+#redCanvas2{
+  grid-column-start: 48;
+  grid-column-end: 85;
+  grid-row-start : 16;
+  grid-row-end: 18;
+  z-index: 10;
+}
+#redCanvas3{
+  grid-column-start: 48;
+  grid-column-end: 85;
+  grid-row-start : 23;
+  grid-row-end: 45;
+  z-index: 100;
 }

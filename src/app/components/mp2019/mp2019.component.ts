@@ -1,6 +1,6 @@
-import {Component, OnInit, ViewChild} from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 import { ToggleDisplayService } from '../../services/toggle-display.service';
-import {PointObject} from '../../objects/point.object';
+import { PointObject } from '../../objects/point.object';
 
 @Component({
   selector: 'app-mp2019',
