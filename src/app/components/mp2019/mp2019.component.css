@@ -226,3 +226,11 @@ p {
   height: 50px;
   border-bottom: 5px solid white;
 }
+
+#greenCanvas2{
+  grid-column-start: 45;
+  grid-column-end: 46;
+  grid-column-end: 0;
+  grid-row : 31;
+  z-index: 10;
+}
