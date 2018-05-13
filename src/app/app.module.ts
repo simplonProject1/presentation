@@ -9,8 +9,6 @@ import { Year2019Component } from './components/year2019/year2019.component';
 import { Year2020Component } from './components/year2020/year2020.component';
 import { StartComponent } from './components/start/start.component';
 import { ArrowComponent } from './components/arrow/arrow.component';
-import { ModalComponent } from './components/modal/modal.component';
-import { MatrixComponent } from './components/modal/content/matrix/matrix.component';
 import { ApptioComponent } from './components/apptio/apptio.component';
 import { Mp2019Component } from './components/mp2019/mp2019.component';
 import { Mp2020Component } from './components/mp2020/mp2020.component';
@@ -45,8 +43,6 @@ const appRoutes: Routes = [
     Year2020Component,
     StartComponent,
     ArrowComponent,
-    ModalComponent,
-    MatrixComponent,
     ApptioComponent,
     Mp2019Component,
     Mp2020Component,
