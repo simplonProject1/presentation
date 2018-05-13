@@ -56,7 +56,6 @@ const appRoutes: Routes = [
   imports: [
     BrowserModule,
     RouterModule.forRoot(appRoutes),
-    NgbModule.forRoot()
   ],
   providers: [
     ToggleViewService,
