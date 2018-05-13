@@ -16,4 +16,8 @@ export class ToggleDisplayService {
     this.display[display] = !this.display[display];
   }
 
+  setYear(currentYear: number): void {
+    this.year = currentYear;
+  }
+
 }

@@ -63,6 +63,12 @@
       <p>PPM</p>
     </div>
 
+    <div class="button">
+      <button *ngIf="year == 2019" class="ippm2" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')" routerLink="/year2019"></button>
+      <button *ngIf="year == 2020" class="ippm2" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')" routerLink="/year2020"></button>
+      <p>Go back</p>
+    </div>
+
   </div>
 
 

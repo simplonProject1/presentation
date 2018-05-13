@@ -27,6 +27,10 @@ export class AppComponent implements OnInit {
     this.toggleDisplayService.setDisplay(display);
   }
 
+  toggleYear(year: number): void {
+    this.toggleDisplayService.setYear(year)
+  }
+
   get year(): number {
     return this.toggleDisplayService.year;
   }

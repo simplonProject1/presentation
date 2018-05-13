@@ -2,20 +2,19 @@
 <div id="nav" *ngIf="!display.foot">
   <ul>
     <li><a routerLink="/">Start</a></li>
-    <li><a routerLink="/year2018">2018</a></li>
-    <li><a routerLink="/year2019">2019</a></li>
-    <li><a routerLink="/year2020">2020</a></li>
-    <li><a *ngIf="year == 2019" routerLink="/mp2019" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')">mp2019</a></li>
-    <li><a *ngIf="year == 2020" routerLink="/mp2020" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')">mp2020</a></li>
+    <li><a routerLink="/year2018" (click)="toggleYear(2018)">2018</a></li>
+    <li><a routerLink="/year2019" (click)="toggleYear(2019)">2019</a></li>
+    <li><a routerLink="/year2020" (click)="toggleYear(2020)">2020</a></li>
+    <li><a *ngIf="year == 2019" routerLink="/mp2019" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')">mp/IPPM</a></li>
+    <li><a *ngIf="year == 2020" routerLink="/mp2020" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')">mp/IPPM</a></li>
     <li><a routerLink="/tpi">TPI</a></li>
-    <li><a routerLink="/apptio">app</a></li>
   </ul>
 </div>
 <!-- GRID -->
 <div>
   <router-outlet></router-outlet>
 </div>
-<!-- FOOTER też powinien być komponent-->
+<!-- FOOTER -->
 <footer *ngIf="!display.foot">
   <div class="legend">
     <button (click)="toggleColor('yellow')" id="jaune"></button>
