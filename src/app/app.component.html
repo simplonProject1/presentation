@@ -5,9 +5,9 @@
     <li><a routerLink="/year2018" (click)="toggleYear(2018)">2018</a></li>
     <li><a routerLink="/year2019" (click)="toggleYear(2019)">2019</a></li>
     <li><a routerLink="/year2020" (click)="toggleYear(2020)">2020</a></li>
-    <li><a *ngIf="year == 2019" routerLink="/mp2019" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')">mp/IPPM</a></li>
-    <li><a *ngIf="year == 2020" routerLink="/mp2020" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')">mp/IPPM</a></li>
-    <li><a routerLink="/tpi">TPI</a></li>
+    <li><a *ngIf="year == 2019" routerLink="/mp2019" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')">IPPM</a></li>
+    <li><a *ngIf="year == 2020" routerLink="/mp2020" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')">IPPM</a></li>
+    <li><a routerLink="/tpi"(click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')">TPE</a></li>
   </ul>
 </div>
 <!-- GRID -->

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {ToggleDisplayService} from '../../services/toggle-display.service';
+import { ToggleDisplayService } from '../../services/toggle-display.service';
 
 @Component({
   selector: 'app-mp2020',

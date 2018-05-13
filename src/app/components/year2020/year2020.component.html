@@ -10,7 +10,7 @@
   <img src="assets\img\Accolade.png" id="acc">
   <div id="content">
     <h3>BW</h3>
-    <p class="bpc">BPC11</p>
+    <p class="bpc" routerLink="/bpc11" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')">BPC11</p>
     <div id="item1">
       <header>
         <p class="blue left">Corporate IPPM</p>
@@ -32,7 +32,7 @@
   </div>
 
 
-  <img src="assets\img\cube.png" routerLink="/matrix1"  id="cube">
+  <img src="assets\img\cube.png" routerLink="/matrix1"  id="cube" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')">
   <p id="metrics">Transaction Metrics</p>
 
   <div class="item4 bigdiv">
@@ -45,7 +45,7 @@
   <div class="item6 bigdiv">
     <p>FI</p>
   </div>
-  <div *ngIf="colors.red" routerLink="/apptio" class="itemrouge bigdiv">
+  <div *ngIf="colors.red"   class="itemrouge bigdiv">
     <p>APPTIO
       <br>Allocation Sub-Ledger for Supply Chain</p>
   </div>

@@ -17,5 +17,4 @@ export class Mp2019Component {
   get year(): number {
     return this.toggleDisplayService.year;
   }
-
 }

@@ -30,7 +30,10 @@ const appRoutes: Routes = [
   {path: 'mp2020', component: Mp2020Component},
   {path: 'tpi', component: TpiComponent},
   {path: 'apptio', component: ApptioComponent},
-  {path: 'matrix1', component: Matrix1Component}
+  {path: 'matrix1', component: Matrix1Component},
+  {path: 'bpc11', component: Bpc11Component},
+  {path: 'ppm2019', component: Ppm2019Component},
+  {path: 'ppm2020', component: Ppm2020Component}
 
 ];
 

@@ -38,13 +38,9 @@
     </div>
   </div>
 
-
-
   <div class="goBack">
-    <button id="goBack"></button>
+    <button *ngIf="year == 2020" class="goBack2" (click)="toggleDisplay('foot')" (click)="toggleDisplay('nav')" routerLink="/year2020"></button>
     <p>Go back</p>
   </div>
-
-
 
 </div>
