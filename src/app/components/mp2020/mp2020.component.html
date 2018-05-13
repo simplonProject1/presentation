@@ -49,12 +49,12 @@
   <div id="buttons">
 
     <div class="button">
-      <button id="red"></button>
+      <button id="red" (click)="toggleColorMP2019('red')"></button>
       <p>Actual IT Towers Allocation Rules</p>
     </div>
 
     <div class="button">
-      <button id="green"></button>
+      <button id="green" (click)="toggleColorMP2019('green')"></button>
       <p>Transaction based Allocation Rules</p>
     </div>
 
@@ -70,6 +70,12 @@
     </div>
 
   </div>
+
+  <app-arrow  [hidden]="!displayMP.green"  id="greenCanvas2"
+              [lines]="[createPoint(1, 40), createPoint(190, 40)]"
+              [color]="'#6ab04c'"
+              [direction]="'right'"
+  ></app-arrow>
 
 
 </div>
