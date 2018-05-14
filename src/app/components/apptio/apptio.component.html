@@ -79,10 +79,83 @@
     </div>
   </div>
 
-  <app-arrow  [hidden]="!displayMP.green"  id="greenCanvas2"
-              [lines]="[createPoint(1, 40), createPoint(190, 40)]"
-              [color]="'#6ab04c'"
-              [direction]="'right'"
+  <app-arrow [hidden]="!displayMP.green" id="greenCanvas3"
+             [lines]="[createPoint(1, 40),createPoint(100, 40),createPoint(100, 100),createPoint(120, 100)]"
+             [color]="'#6ab04c'"
+             [direction]="'right'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!displayMP.green" id="greenCanvas3bottom"
+             [lines]="[createPoint(100, 0),createPoint(100, 120),createPoint(120,120)]"
+             [color]="'#6ab04c'"
+             [direction]="'right'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!displayMP.green" id="greenCanvas3top"
+             [lines]="[createPoint(100, 135),createPoint(100, 40),createPoint(120, 40)]"
+             [color]="'#6ab04c'"
+             [direction]="'right'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!displayMP.green" id="greenCanvas4"
+             [lines]="[createPoint(100, 65), createPoint(100, 105)]"
+             [color]="'#6ab04c'"
+             [direction]="'down'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!displayMP.green" id="greenCanvas5"
+             [lines]="[createPoint(100, 65), createPoint(100, 25)]"
+             [color]="'#6ab04c'"
+             [direction]="'up'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!displayMP.green" id="greenCanvas6"
+             [lines]="[createPoint(100, 65), createPoint(100, 25)]"
+             [color]="'#6ab04c'"
+             [direction]="'up'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!displayMP.green" id="greenCanvas7"
+             [lines]="[createPoint(100, 65), createPoint(100, 25)]"
+             [color]="'#6ab04c'"
+             [direction]="'up'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!displayMP.green" id="greenCanvas9"
+             [lines]="[createPoint(10, 240), createPoint(10, 20), createPoint(40, 20)]"
+             [color]="'#6ab04c'"
+             [direction]="'right'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!displayMP.green" id="greenCanvas9bis"
+             [lines]="[createPoint(10, 5), createPoint(10, 120), createPoint(65, 120)]"
+             [color]="'#6ab04c'"
+             [direction]="''"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!displayMP.green" id="greenCanvas10"
+             [lines]="[createPoint(100, 20), createPoint(10, 20), createPoint(10, 240)]"
+             [color]="'#6ab04c'"
+             [direction]="''"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!displayMP.green" id="greenCanvas10bis"
+             [lines]="[createPoint(10, 5), createPoint(10, 120), createPoint(80, 120)]"
+             [color]="'#6ab04c'"
+             [direction]="'right'"
+  ></app-arrow>
+
+
+  <app-arrow [hidden]="!displayMP.red" id="redCanvas1"
+             [lines]="[createPoint(10, 20), createPoint(10, 40)]"
+             [color]="'#b53471'"
+             [direction]="'down'"
+  ></app-arrow>
+
+  <app-arrow [hidden]="!displayMP.red" id="redCanvas3"
+             [lines]="[createPoint(15,140),createPoint(30, 140),createPoint(30, 20), createPoint(240,20)]"
+             [color]="'#b53471'"
+             [direction]="'right'"
   ></app-arrow>
 
 </div>
